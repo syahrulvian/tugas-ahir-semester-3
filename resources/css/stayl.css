@@ -1,0 +1,48 @@
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.2)),url(pus.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color:white;
+    font-size:38px;
+    font-weight:500;
+    font-shadow:0px 1px 1px black;
+}
+.home .content h1{
+    color:white;
+    font-size:70px;
+    font-weight:600;
+    font-shadow:0px 1px 1px black;
+    margin-top: 15px;
+}
+.hoo::after{
+    content: ' ';
+    color:  #ffd900;
+    text-shadow:0px 1px 1px black;
+    animation: changetext 15s infinite linear;
+}
+@keyframes changetext{
+  
+    10%{content:"Bibiliografi";}
+    20%{content:"Psikologi";}
+    30%{content:"Ilmu politik";}
+    40%{content:"Ekonomi";}
+    50%{content:"Hukum";}
+    60%{content:"Sains";}
+    70%{content:"Agama";}
+    80%{content:"Sejarah";}
+}
+.home .content a{
+background:#ffd900;
+color:white;
+    padding:10px;
+    text-decoration:none;
+    
+}

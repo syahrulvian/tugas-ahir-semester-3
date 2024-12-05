@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+<script>
+    function toggleDropdown() {
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        if (dropdownMenu.style.display === 'none' || !dropdownMenu.style.display) {
+            dropdownMenu.style.display = 'block';
+        } else {
+            dropdownMenu.style.display = 'none';
+        }
+    }
+
+    // Tutup dropdown saat klik di luar
+    document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('dropdownMenu');
+        const button = event.target.closest('button');
+        if (!dropdown.contains(event.target) && !button) {
+            dropdown.style.display = 'none';
+        }
+    });
+</script>
